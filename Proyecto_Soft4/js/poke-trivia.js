@@ -1,6 +1,7 @@
+//Crear constantes con los elementos de la pagina
 const questionEl = document.getElementById('question');
 const userAnswerEl = document.getElementById('user-answer');
-const feedbackEl = document.getElementById('feedback');
+const feedbackEl = document.getElementById('feedback'); // La respuesta que da el script
 const getQuestionBtn = document.getElementById('get-question');
 const checkAnswerBtn = document.getElementById('check-answer');
 
@@ -16,22 +17,22 @@ const triviaQuestions = [
     { question: "¿Quién es el líder del Equipo Rocket?", answer: "Giovanni" }
 ];
 
-// Función para seleccionar una pregunta aleatoria
+// Funcion para seleccionar una pregunta aleatoria
 function fetchTrivia() {
     const randomIndex = Math.floor(Math.random() * triviaQuestions.length);
     const trivia = triviaQuestions[randomIndex];
 
     // Mostrar pregunta y resetear feedback
     questionEl.textContent = trivia.question;
-    userAnswerEl.value = ''; // Limpiar el campo de respuesta
+    userAnswerEl.value = ''; // Resetear el campo de respuesta
     feedbackEl.classList.add('hidden');
     checkAnswerBtn.classList.remove('hidden');
     checkAnswerBtn.onclick = () => checkAnswer(trivia.answer);
 }
 
-// Función para verificar la respuesta del usuario
+// Funcion para verificar la respuesta del usuario
 function checkAnswer(correctAnswer) {
-    const userAnswer = userAnswerEl.value.trim();
+    const userAnswer = userAnswerEl.value.trim(); // Trim para quitar espacios
 
     if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
         feedbackEl.textContent = "¡Respuesta Correcta!";

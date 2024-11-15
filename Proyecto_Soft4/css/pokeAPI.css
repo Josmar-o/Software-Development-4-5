@@ -18,7 +18,7 @@
 }
 
 h1 {
-    color: #ff6347;
+    color: #d53a47;
 }
 
 .pokemon-display {
@@ -33,7 +33,7 @@ h1 {
 button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #ff6347;
+    background-color: #d53a47;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -41,5 +41,5 @@ button {
 }
 
 button:hover {
-    background-color: #ff4500;
+    background-color: #a1252f;
 }
