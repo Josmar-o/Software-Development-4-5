@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeFans | Trivia en Español</title>
+    <link rel="stylesheet" href="../css/poke-trivia.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <script src="../js/cargarReutilizable.js"></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="section">
+        <div class="container">
+            <h1>Pokémon Trivia en Español</h1>
+
+            <div class="trivia-section">
+                <p id="question">Presiona el botón para obtener una pregunta de trivia sobre Pokémon.</p>
+                <input type="text" id="user-answer" placeholder="Escribe tu respuesta aquí">
+                <p id="feedback" class="hidden"></p>
+            </div>
+            
+            <button id="get-question">Nueva Pregunta</button>
+            <button id="check-answer" class="hidden">Comprobar Respuesta</button> 
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../js/poke-trivia.js"></script>
+</body>
+
+</html>

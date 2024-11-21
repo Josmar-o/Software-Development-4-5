@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+} 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0; 
+    border-bottom: 4px solid #d53a47; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar-logo img {
+    height: 70px;
+}
+
+
+.navbar-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+#pokedex-btn, #formulario-btn {
+    padding: 8px 16px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #d53a47;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#pokedex-btn:hover, #formulario-btn:hover {
+    background-color: #a52a2a; 
+}
